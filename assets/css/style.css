@@ -71,3 +71,12 @@ body {
 ::-webkit-scrollbar-thumb:hover {
         background: #555;
 }
+
+.author {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    color: white;
+    text-align: center;
+}
