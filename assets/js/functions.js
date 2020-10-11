@@ -42,5 +42,6 @@ $(function () {
         $(".toast-body").text('Nova mensagem');
         $('.toast').toast('show'); 
         $('#messages').append($('<li>').text(msg));
+        $('#messages').scrollTop($('#messages').prop('scrollHeight'));
     });
 });

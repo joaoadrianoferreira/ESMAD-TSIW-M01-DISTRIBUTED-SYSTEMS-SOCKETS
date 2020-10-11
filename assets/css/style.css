@@ -1,33 +1,37 @@
 body {
     background-color: #1A1718;
+    text-align: center;
 }
 
 .ipp {
-    position: absolute;
     width: 300px;
-    top: 10px;
-    left: 10px;
-    border-radius: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
 }
 
-.container {
+#container {
+    margin: auto;
     font-weight: bold;
     color: black;
     padding: 20px;
-    margin-top: 10vh;
+    margin-top: 10px;
     background-color: white;
     border-radius: 20px;
-    height: 80vh;
-    width: 500px;
+    height: 70vh;
+    width: 80vw;
+    max-width: 500px;
     -webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
     box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.75);
 }
 
 #send-message, #guest-name {
-    width: 94%;
+    width: 100%;
     position: absolute;
-    bottom: -70vh;
+    bottom: -65vh;
+    left: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #messages {
@@ -36,7 +40,7 @@ body {
     text-align: left !important;
     position: absolute;
     top: 10px;
-    height: 54vh;
+    height: 40vh;
     overflow: auto;
     text-align: center;
 }
@@ -75,7 +79,7 @@ body {
 .author {
     width: 100%;
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     left: 0px;
     color: white;
     text-align: center;

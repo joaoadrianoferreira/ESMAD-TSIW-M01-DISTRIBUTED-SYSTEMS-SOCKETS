@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Real-Time Chat</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -13,13 +14,13 @@
     </head>
     <body>
         <img class="ipp" src="assets/img/logo.png">
-        <div class="container">
+        <div id="container">
             <div class="row">
-                <div class="col-sm text-center">
+                <div class="col-sm-12 text-center">
                     <form id="guest-name">
                         <div class="form-group">
                           <label for="name">Insere o teu Nickname</label>
-                          <input type="text" class="form-control" id="name">
+                          <input type="text" class="form-control" id="name" required>
                         </div>
                         <button type="submit" class="btn btn-danger">Submeter</button>
                     </form>
@@ -28,7 +29,7 @@
                         <form id="send-message">
                             <div class="form-group">
                                 <label for="message">Mensagem</label>
-                                <input type="text" class="form-control" id="message" autocomplete="off" />
+                                <input type="text" class="form-control" id="message" autocomplete="off" required />
                             </div>
                             <button type="submit" class="btn btn-danger">Enviar</button>
                         </form>
